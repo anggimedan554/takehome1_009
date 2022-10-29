@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <html>
+    <head>
+        <title>Pembelian</title>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+        <div style="color: blue;background: yellow" align="center">Hasil Belanja</div>
+        <hr>
+        <table border="1" style="background:  goldenrod">
+        <tr>
+            <td><b>Nama Sayur</b></td>
+            <td><b th:text="${varbuah}"</b></td>
+        </tr>
+        
+        <tr>
+            <td><b>Harga Perkilo </b></td>
+            <td><b th:text="${varharga}"</b></td>
+        </tr>
+        
+        <tr>
+            <td><b>Jumlah Kilo</b></td>
+            <td><b th:text="${varjumlah}"</b></td>
+        </tr>
+         <tr>
+            <td><b> Harga Awal  </b></td>
+            <td><b th:text="${total}"</b></td>
+        </tr>
+        <tr>
+            <td><b>Jumlah Diskon (%) </b></td>
+            <td><b th:text="${disc}"</b></td>
+        </tr>
+        <tr>
+            <td><b>Total Harga Diskon   </b></td>
+            <td><b th:text="${discount}"</b></td>
+        </tr>
+        <tr>
+            <td><b>Total bayar</b></td>
+            <td><b th:text="${vartotal}"</b></td>
+        </tr>
+        <tr>
+            <td><b>Uang di bayar </b></td>
+            <td><b th:text="${bayar}"</b></td>
+        </tr>
+            <tr>
+            <td> <b>Keterangan </b></td>
+            <td><b th:text="${ket}"</b></td>
+       
+        </tr>
+    </body>
+</html>
+<html>
+        <p> Nama Sayur                   : <b th:text="${varbuah}"></b>
+        <p> Harga Perkilo               : Rp. <b th:text="${varharga}"></b>
+        <p> Jumlah Kilo                 : <b th:text="${varjumlah}"></b> 
+        <p> Harga Awal                  : Rp.<b th:text="${total}"></b>
+        <p> Jumlah Diskon (%)           : <b th:text ="${disc}"></b>
+        <p> Total Harga Diskon          : <b th:text="${discount}"></b>
+        <p> Total bayar                 : Rp. <b th:text="${vartotal}"></b>
+        <p> Uang di bayar                 : Rp. <b th:text="${bayar}"></b>
+        <p><b>Keterangan:</b</p>
+        <br><i th:text="${ket}"></i> </br>
+
+    </body>
+</html>
+
