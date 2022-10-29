@@ -16,8 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class controllerwarung {
-    public class WarungController {
-    @RequestMapping ("/ANGGY")
+    @RequestMapping("/ANGGY")
     public String prosesInputan (HttpServletRequest data, Model get)
     {
         String inputBuah = data.getParameter("namasayur");
@@ -71,9 +70,7 @@ public class controllerwarung {
         get.addAttribute("bayar", inputBayar);
         get.addAttribute("ket", keterangan);
         
-        return "AnggyMunthe";
+        return "warungsayur";
     }
 
-    
-    }
 }
